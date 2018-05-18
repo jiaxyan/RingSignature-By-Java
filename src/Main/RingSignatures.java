@@ -147,7 +147,7 @@ public class RingSignatures {
             long time = System.currentTimeMillis();
             byte[][] sig = genRing(keys, message, bitlength, rondom);
             boolean b = verify(sig, keys, message, bitlength);
-            System.out.println(b + " " + numKeys + " " + s + " " + (System.currentTimeMillis() - time));
+            System.out.println(b + " numKeys:" + numKeys + " No." + s + " time:" + (System.currentTimeMillis() - time));
 //            if (!b) {
 //                return;
 //            }
